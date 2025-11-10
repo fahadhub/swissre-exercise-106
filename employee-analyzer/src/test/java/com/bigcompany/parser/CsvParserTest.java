@@ -1,11 +1,10 @@
-package com.bigcompany.service;
+package com.bigcompany.parser;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import com.bigcompany.model.EmployeeRecord;
-import com.bigcompany.parser.CsvParser;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
