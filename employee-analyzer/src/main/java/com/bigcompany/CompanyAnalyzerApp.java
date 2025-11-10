@@ -30,12 +30,23 @@ public class CompanyAnalyzerApp {
       EmployeeRecord ceo = builder.buildHierarchy(employees);
 
       List<SalaryReport> salaryReports = analyzer.checkManagerSalaries(ceo);
-      System.out.println("------------SALARY REPORT------------");
+      if (salaryReports.isEmpty()) {
+        System.out.println("All managers have valid salaries.");
+      } else {
+        System.out.println("------------SALARY REPORT------------");
+      }
       for (SalaryReport report : salaryReports) {
         System.out.println(report.toString());
       }
+
+      System.out.println();
+
       List<DepthReport> depthReports = analyzer.checkReportingDepth(ceo);
-      System.out.println("------------DEPTH REPORT------------");
+      if (depthReports.isEmpty()) {
+        System.out.println("All reporting depths are valid.");
+      } else {
+        System.out.println("------------DEPTH REPORT------------");
+      }
       for (DepthReport dr : depthReports) {
         System.out.println(dr.toString());
       }
