@@ -15,10 +15,10 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BuildHeirarchyTest {
+public class BuildHierarchyTest {
     @Test
     void testNoCeoThrowsException() {
-        BuildHeirarchy builder = new BuildHeirarchy();
+        BuildHierarchy builder = new BuildHierarchy();
 
         Map<Integer, EmployeeRecord> employees = new HashMap<>();
         employees.put(124, new EmployeeRecord(124, "Martin", "Chekov", 45000, 123));
@@ -47,7 +47,7 @@ public class BuildHeirarchyTest {
 
         CsvParser parser = new CsvParser();
         Map<Integer, EmployeeRecord> employees = parser.parse(tempFile.getAbsolutePath());
-        BuildHeirarchy builder = new BuildHeirarchy();
+        BuildHierarchy builder = new BuildHierarchy();
         EmployeeRecord ceo = builder.buildHierarchy(employees);
 
         assertNotNull(ceo);

@@ -47,6 +47,6 @@ public class EmployeeRecord {
 
     @Override
     public String toString() {
-        return firstName + " " + lastName + " (ID: " + id + ", Salary: " + salary + ")";
+        return firstName + " " + lastName + " (ID: " + id + ")";
     }
 }

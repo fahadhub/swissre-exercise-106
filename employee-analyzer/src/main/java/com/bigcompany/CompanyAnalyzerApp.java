@@ -6,7 +6,7 @@ import com.bigcompany.model.SalaryReport;
 
 import com.bigcompany.parser.CsvParser;
 import com.bigcompany.service.OrganizationAnalyzer;
-import com.bigcompany.service.BuildHeirarchy;
+import com.bigcompany.service.BuildHierarchy;
 
 import java.io.IOException;
 import java.util.*;
@@ -25,7 +25,7 @@ public class CompanyAnalyzerApp {
         String filePath = args[0];
         OrganizationAnalyzer analyzer = new OrganizationAnalyzer();
         CsvParser parser = new CsvParser();
-        BuildHeirarchy builder = new BuildHeirarchy();
+        BuildHierarchy builder = new BuildHierarchy();
 
         try {
             Map<Integer, EmployeeRecord> employees = parser.parse(filePath);

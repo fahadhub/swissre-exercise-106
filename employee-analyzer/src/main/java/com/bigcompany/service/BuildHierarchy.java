@@ -4,7 +4,7 @@ import java.util.Map;
 
 import com.bigcompany.model.EmployeeRecord;
 
-public class BuildHeirarchy {
+public class BuildHierarchy {
     public EmployeeRecord buildHierarchy(Map<Integer, EmployeeRecord> employees) {
         EmployeeRecord ceo = null;
 
